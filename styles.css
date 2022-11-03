@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom right, #afbcf7, #2157ee, #8c2ef7, #c746ee);
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 300px;
+    max-width: 100%;
+}
+
+.first-container {
+    color: white;
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 18%;
+    border-right: 3px solid white;
+}
+
+.second-container{
+    max-width: 40%;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+}
+
+#login-label {
+    padding-bottom: 20px;
+}
+
+input {
+    background-color: transparent;
+    color: white;
+    border: 0px;
+    padding: 10px 0 10px 5px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.596);
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.email {
+    background-color: rgba(255, 255, 255, 0.39);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.password {
+    background-color: rgba(255, 255, 255, 0.39);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#icon {
+    padding: 0 10px 0 10px;
+    border-right: 1px solid white;
+}
+
+.check-box {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    padding: 10px 0 20px 0;
+}
+
+label {
+    padding-left: 5px;
+    padding-right: 70px;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.836);
+    color: purple;
+    border: none;
+    height: 55px;
+    font-size: 25px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    font-size: 27px;
+    transition: all ease-in-out 0.2s;
+}
+
+.register {
+    color: white;
+    padding-top: 40px;
+}
+
+@media (max-width: 1000px) {
+    .first-container {
+        padding-right: 10%;
+    }
+    
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        padding-top: 200px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-container {
+        padding: 0;
+        border-right: none;
+    }
+    
+    .first-container p {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        padding-top: 100px;
+    }
+
+    #icon {
+        display: none;
+    }
+
+    label {
+        padding-left: 5px;
+        padding-right: 20px;
+    }
+}
